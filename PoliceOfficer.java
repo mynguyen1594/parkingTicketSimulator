@@ -27,17 +27,17 @@ public class PoliceOfficer {
 			this.badgeNumber = badgeNumber;
 		}
 		
-		public boolean examineParkedCar(ParkedCar parkedCar, ParkingMeter parkingMeter) {
-			boolean issueTicket = false;
-			
-			if (parkedCar.getParkedTime() > parkingMeter.getPurchasedTime()) {
-				issueTicket = true;
-			}
-			else {
-				issueTicket = false;
-			}
-			return issueTicket;
-		}
+//		public boolean examineParkedCar(ParkedCar parkedCar, ParkingMeter parkingMeter) {
+//			boolean issueTicket = false;
+//			
+//			if (parkedCar.getParkedTime() > parkingMeter.getPurchasedTime()) {
+//				issueTicket = true;
+//			}
+//			else {
+//				issueTicket = false;
+//			}
+//			return issueTicket;
+//		}
 		
 		public void examineAndIssueTicket(ParkedCar parkedCar, ParkingMeter parkingMeter) {
 			ParkingTicket parkingTicket = new ParkingTicket (parkedCar, parkingMeter, this);
